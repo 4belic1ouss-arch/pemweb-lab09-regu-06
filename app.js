@@ -19,3 +19,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server berjalan pada http://localhost:${PORT}`);
 });
+// Route Modul Buku
+const bukuRoutes = require('./routes/bukuRoutes');
+app.use('/api/buku', bukuRoutes);
